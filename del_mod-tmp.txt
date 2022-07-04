@@ -1,0 +1,8 @@
+find /var/www/strans_site/data/mod-tmp -name "sess_*" -type f -mtime +1 -exec rm {} \;
+
+
+find /var/www/strans_site/data/mod-tmp -name "sess_*" -type f -mmin +720 -exec rm {} \;
+
+
+find /var/www/user/data/mod-tmp -type f -mtime +1 -delete
+find /var/www/*/data/mod-tmp1 -name "sess_*" -type f -exec rm {} \;
